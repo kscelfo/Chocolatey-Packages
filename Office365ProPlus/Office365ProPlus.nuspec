@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Office365ProPlus</id>
-        <version>15.0.4454.1516</version>
+        <version>16.0.8008.3601</version>
         <title>Office365ProPlus</title>
         <authors>Microsoft</authors>
         <owners>Kenny Scelfo</owners>
@@ -13,6 +13,6 @@
         <summary>Office365ProPlus</summary>
         <releaseNotes />
         <copyright />
-        <tags>Office365ProPlus Office 365 2013 Professional Plus</tags>
+        <tags>Office365ProPlus Office 365 2016 Professional Plus</tags>
     </metadata>
 </package>

@@ -1,7 +1,7 @@
 ﻿$configFile = (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'configuration.xml')
 $packageName = 'Office365ProPlus'
 $installerType = 'EXE'
-$url = 'http://download.microsoft.com/download/6/2/3/6230F7A2-D8A9-478B-AC5C-57091B632FCF/officedeploymenttool.exe'
+$url = 'https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_8008-3601.exe'
 
 $silentArgs = "/extract:$env:temp\office /log:$env:temp\officeInstall.log /quiet /norestart"
 $validExitCodes = @(0)

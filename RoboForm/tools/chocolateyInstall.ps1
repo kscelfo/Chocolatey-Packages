@@ -1,6 +1,6 @@
 ﻿$packageName = 'RoboForm'
 $installerType = 'EXE'
-$url = 'http://www.roboform.com/dist/RoboForm-Setup.exe'
+$url = 'https://www.roboform.com/dist/RoboForm-v8-Setup.exe'
 $silentArgs = '/silent'
 $validExitCodes = @(0)
 
