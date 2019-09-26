@@ -10,7 +10,7 @@
     <title>RoboForm (Install)</title>
     <authors>Siber Systems</authors>
     <projectUrl>https://www.roboform.com</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/https://github.com/kscelfo/Chocolatey-Packages/tree/master/RoboForm/roboform-32.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/https://github.com/kscelfo/Chocolatey-Packages/raw/master/RoboForm/roboform-32.png</iconUrl>
     <copyright>2019</copyright>
     <licenseUrl>https://www.roboform.com/support/license</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>    
