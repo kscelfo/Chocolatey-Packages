@@ -11,11 +11,10 @@
     <authors>Siber Systems</authors>
     <projectUrl>https://www.roboform.com</projectUrl>
     <iconUrl>https://kscelfo.github.io/Chocolatey-Packages/icons/roboform-32.png</iconUrl>
-    <copyright>2019</copyright>
     <licenseUrl>https://www.roboform.com/support/license</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>    
     <docsUrl>https://www.roboform.com/manual</docsUrl>
-    <tags>roboform, password</tags>
+    <tags>roboform password</tags>
     <summary>RoboForm Password Manager</summary>
     <description>RoboForm remembers your passwords so you don't have to! Just remember your one Master Password and RoboForm remembers the rest- it's that easy! Our bookmark-style Logins automatically log you in to your favorite websites with one click.</description>
     <!-- =============================== -->      
