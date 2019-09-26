@@ -1,23 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>RoboForm</id>
-    <title>RoboForm</title>
-    <version>8.3.3</version>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>roboform</id>
+    <version>8.6.0</version>
+    <packageSourceUrl>https://github.com/kscelfo/Chocolatey-Packages/tree/master/RoboForm/</packageSourceUrl>
+    <owners>kscelfo</owners>
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>RoboForm (Install)</title>
     <authors>Siber Systems</authors>
-    <owners>Kenny Scelfo</owners>
+    <projectUrl>https://www.roboform.com</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/https://github.com/kscelfo/Chocolatey-Packages/tree/master/RoboForm/roboform-32.png</iconUrl>
+    <copyright>2019</copyright>
+    <licenseUrl>https://www.roboform.com/support/license</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>    
+    <docsUrl>https://www.roboform.com/manual</docsUrl>
+    <tags>roboform, password</tags>
     <summary>RoboForm Password Manager</summary>
     <description>RoboForm remembers your passwords so you don't have to! Just remember your one Master Password and RoboForm remembers the rest- it's that easy! Our bookmark-style Logins automatically log you in to your favorite websites with one click.</description>
-    <projectUrl>http://www.roboform.com</projectUrl>
-    <tags>RoboForm</tags>
-    <copyright></copyright>
-    <licenseUrl>http://www.roboform.com/support/license</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://raw.github.com/kscelfo/Chocolatey-Packages/master/RoboForm/RoboForm.png</iconUrl>-->
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
-    <releaseNotes></releaseNotes>
+    <!-- =============================== -->      
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
