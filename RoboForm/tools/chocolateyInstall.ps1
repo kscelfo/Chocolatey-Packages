@@ -11,7 +11,7 @@ $packageArgs = @{
 
   softwareName  = 'roboform*'
 
-  checksum      = 'B69896D7AFCC028EB38A09AB30579E5F9E06C121246A3BB4CC7C18A50E7BF3DD'
+  checksum      = '69B2CA4760879693854D90B491AD72D7AB3F5F21CC9A27B662276D1BCC4E682D'
   checksumType  = 'sha256'
 
   silentArgs    = "/silent"
