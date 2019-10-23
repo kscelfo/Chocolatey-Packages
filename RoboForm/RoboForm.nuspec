@@ -3,14 +3,14 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>roboform</id>
-    <version>8.6.0</version>
+    <version>8.6.2.2</version>
     <packageSourceUrl>https://github.com/kscelfo/Chocolatey-Packages/tree/master/RoboForm/</packageSourceUrl>
     <owners>kscelfo</owners>
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <title>RoboForm (Install)</title>
     <authors>Siber Systems</authors>
     <projectUrl>https://www.roboform.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/kscelfo/Chocolatey-Packages@v8.6.0/docs/icons/roboform-32.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/kscelfo/Chocolatey-Packages@v8.6.2.2/docs/icons/roboform-32.png</iconUrl>
     <licenseUrl>https://www.roboform.com/support/license</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>    
     <docsUrl>https://www.roboform.com/manual</docsUrl>
