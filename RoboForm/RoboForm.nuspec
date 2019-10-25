@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>roboform</id>
-    <version>8.6.0</version>
+    <version>8.6.2.2</version>
     <packageSourceUrl>https://github.com/kscelfo/Chocolatey-Packages/tree/master/RoboForm/</packageSourceUrl>
     <owners>kscelfo</owners>
     <!-- == SOFTWARE SPECIFIC SECTION == -->
