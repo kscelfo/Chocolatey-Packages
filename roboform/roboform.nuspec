@@ -4,13 +4,13 @@
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>roboform</id>
     <version>9.1.9.20211004</version>
-    <packageSourceUrl>https://github.com/kscelfo/Chocolatey-Packages/tree/master/RoboForm/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kscelfo/Chocolatey-Packages/tree/master/roboform/</packageSourceUrl>
     <owners>kscelfo</owners>
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <title>RoboForm (Install)</title>
     <authors>Siber Systems</authors>
     <projectUrl>https://www.roboform.com</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/kscelfo/Chocolatey-Packages/master/docs/icons/roboform-32.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/kscelfo/Chocolatey-Packages/master/roboform/icon.png</iconUrl>
     <licenseUrl>https://www.roboform.com/support/license</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>    
     <docsUrl>https://www.roboform.com/manual</docsUrl>
