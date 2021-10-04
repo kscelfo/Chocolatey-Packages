@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>roboform</id>
+    <version>9.1.9.20211004</version>
+    <packageSourceUrl>https://github.com/kscelfo/Chocolatey-Packages/tree/master/RoboForm/</packageSourceUrl>
+    <owners>kscelfo</owners>
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>RoboForm (Install)</title>
+    <authors>Siber Systems</authors>
+    <projectUrl>https://www.roboform.com</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/kscelfo/Chocolatey-Packages/master/docs/icons/roboform-32.png</iconUrl>
+    <licenseUrl>https://www.roboform.com/support/license</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>    
+    <docsUrl>https://www.roboform.com/manual</docsUrl>
+    <tags>roboform password</tags>
+    <summary>RoboForm Password Manager</summary>
+    <description>RoboForm remembers your passwords so you don't have to! Just remember your one Master Password and RoboForm remembers the rest- it's that easy! Our bookmark-style Logins automatically log you in to your favorite websites with one click.</description>
+    <!-- =============================== -->      
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
