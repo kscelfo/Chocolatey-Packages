@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>progresscontrolpanel</id>
+    <version>0.0.0</version>
+    <packageSourceUrl>https://github.com/kscelfo/Chocolatey-Packages/tree/master/progresscontrolpanel/</packageSourceUrl>
+    <owners>kscelfo</owners>
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>Progress Control Panel</title>
+    <authors>Progress Telerik</authors>
+    <projectUrl>https://www.telerik.com.com</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/kscelfo/Chocolatey-Packages/master/progresscontrolpanel/icon.png</iconUrl>
+    <licenseUrl>https://www.telerik.com/purchase/faq/licensing-purchasing</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>    
+    <docsUrl>https://www.telerik.com/support</docsUrl>
+    <tags>telerik progress</tags>
+    <summary>Progress Control Panel Installer</summary>
+    <description>Use this application to log into your Progress Telerik account and install the products for which you are licensed.</description>
+    <!-- =============================== -->      
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
