@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <version>0</version>
+    <version>0.0</version>
     <authors>Mozilla</authors>
     <projectUrl>https://www.mozilla.org/en-US/firefox/developer/</projectUrl>
     <licenseUrl>https://www.mozilla.org/en-US/MPL/2.0/</licenseUrl>
     <id>firefox-developer</id>
     <title>Mozilla Firefox Developer Edition</title>
+    <description>Firefox Developer Edition Installer</description>
     <owners>kscelfo</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>browser mozilla firefox</tags>
