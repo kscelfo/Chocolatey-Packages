@@ -9,6 +9,7 @@
     <title>Mozilla Firefox Developer Edition</title>
     <description>Firefox Developer Edition Installer</description>
     <owners>kscelfo</owners>
+    <iconUrl>https://cdn.rawgit.com/kscelfo/Chocolatey-Packages/master/firefox-developer/icon.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>browser mozilla firefox</tags>
     <releaseNotes>https://www.mozilla.org/en-US/firefox/78.15.0/releaseNotes/</releaseNotes>
