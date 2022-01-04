@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <version>93.0</version>
+    <version>95.0</version>
     <authors>Mozilla</authors>
     <projectUrl>https://www.mozilla.org/en-US/firefox/developer/</projectUrl>
     <licenseUrl>https://www.mozilla.org/en-US/MPL/2.0/</licenseUrl>

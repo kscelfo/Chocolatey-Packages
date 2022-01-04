@@ -4,10 +4,10 @@ $packageArgs = @{
   packageName            = 'firefox-developer'
   fileType               = 'msi'
   url                    = 'https://download.mozilla.org/?product=firefox-devedition-msi-latest-ssl&amp;os=win&amp;lang=en-US'  
-  checksum               = '6267e743a5188dd51a71f94e80f83d08fb416e468274c5ad473d04272339a795'
+  checksum               = '63f2795b29268b45f986097b43a37e4da1e33391822b79e3e1034a3f1b277ddf'
   checksumType           = 'sha256'
   url64bit               = 'https://download.mozilla.org/?product=firefox-devedition-msi-latest-ssl&amp;os=win64&amp;lang=en-US'  
-  checksum64             = '3635f0a3832e24a3c62a30fb0de5cacf8cc426f479f0ae39688ad50580fe3b7f'
+  checksum64             = 'b9635254ab05b06c47cd6ed59ae90691ebabcc9da50cecf10bc40f86ba172c1f'
   checksumType64         = 'sha256'
   silentArgs             = '/qn'
   validExitCodes         = @(0)
