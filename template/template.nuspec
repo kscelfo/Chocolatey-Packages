@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id></id>
+        <version>0.0</version>
+        <description></description>
+        <authors></authors>
+
+        <!-- Optional elements -->
+        <title></title>
+        <description></description>
+        <owners>kscelfo</owners>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <tags></tags>
+        <releaseNotes></releaseNotes>
+        <projectUrl></projectUrl>
+        <licenseUrl></licenseUrl>
+        <packageSourceUrl>https://github.com/kscelfo/Chocolatey-Packages/tree/master/template/</packageSourceUrl>
+        <iconUrl>https://cdn.rawgit.com/kscelfo/Chocolatey-Packages/master/template/icon.png</iconUrl>
+        <dependencies>
+            <dependency id="chocolatey-core.extension" version="1.3.3" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="tools\**" target="tools" />
+    </files>
+</package>

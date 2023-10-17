@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.mozilla.org/en-US/firefox/developer/'
+$releases = ''
 
 function global:au_SearchReplace {
    @{
