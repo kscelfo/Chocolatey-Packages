@@ -39,13 +39,13 @@ Set `$au_Force = $true` prior to script call to update the package even if no ne
 
 To update all packages run `./update_all.ps1`. It accepts few options:
 
-    ```powershell
-    ./update_all.ps1 -Name a*                         # Update all packages which name start with letter 'a'
-    ./update_all.ps1 -ForcedPackages 'cpu-z copyq'    # Update all packages and force cpu-z and copyq
-    ./update_all.ps1 -ForcedPackages 'copyq:1.2.3'    # Update all packages but force copyq with explicit version
-    ./update_all.ps1 -ForcedPackages 'libreoffice-streams\fresh:6.1.0]'    # Update all packages but force libreoffice-streams package to update stream `fresh` with explicit version `6.1.0`.
-    ./update_all.ps1 -Root 'c:\packages'              # Update all packages in the c:\packages folder
-    ```
+```powershell
+./update_all.ps1 -Name a*                         # Update all packages which name start with letter 'a'
+./update_all.ps1 -ForcedPackages 'cpu-z copyq'    # Update all packages and force cpu-z and copyq
+./update_all.ps1 -ForcedPackages 'copyq:1.2.3'    # Update all packages but force copyq with explicit version
+./update_all.ps1 -ForcedPackages 'libreoffice-streams\fresh:6.1.0]'    # Update all packages but force libreoffice-streams package to update stream `fresh` with explicit version `6.1.0`.
+./update_all.ps1 -Root 'c:\packages'              # Update all packages in the c:\packages folder
+```
 
 The following global variables influence the execution of `update_all.ps1` script if set prior to the call:
 
@@ -62,11 +62,11 @@ You can also call AU method `Update-AUPackages` (alias `updateall`) on its own i
 
 You can force the update of all or subset of packages to see how they behave when complete update procedure is done:
 
-    ```powershell
-    ./test_all.ps1                            # Test force update on all packages
-    ./test_all.ps1 'cdrtfe','freecad', 'p*'   # Test force update on only given packages
-    ./test_all.ps1 'random 3'                 # Split packages in 3 groups and randomly select and test 1 of those each time
-    ```
+```powershell
+./test_all.ps1                            # Test force update on all packages
+./test_all.ps1 'cdrtfe','freecad', 'p*'   # Test force update on only givenpackages
+./test_all.ps1 'random 3'                 # Split packages in 3 groups andrandomly select and test 1 of those each time
+```
 
 **Note**: If you run this locally your packages will get updated. Use `git reset --hard` after running this to revert the changes.
 
