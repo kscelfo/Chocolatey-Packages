@@ -2,12 +2,12 @@ $ErrorActionPreference = 'Stop'
 
 $packageArgs = @{
   packageName            = 'progresscontrolpanel'
-  fileType               = 'msi'
-  url                    = 'https://www.roboform.com/dist/RoboForm-v9-Enterprise.msi'  
-  checksum               = 'dea45ffb2623d8afefbc1e209aa75d54d47322006e459f2fdcfa5e6e2f71dec8'
+  fileType               = 'exe'
+  url                    = 'https://www.telerik.com/try/control-panel'  
+  checksum               = ''
   checksumType           = 'sha256'  
-  silentArgs             = '/qn'
+  silentArgs             = ''
   validExitCodes         = @(0)
-  softwareName           = 'RoboForm'
+  softwareName           = 'Progress Control Panel'
 }
 Install-ChocolateyPackage @packageArgs
