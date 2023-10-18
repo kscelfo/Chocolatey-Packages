@@ -15,7 +15,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
     $url32   = $download_page.links | ? href -match '.msi$' | % href | select -First 1
-    $download_page.AllElements|? innerText -match '.*MSI.*\sv(\d*?\.\d*?\.\d*?)$'
+    $download_page.Content -match 'Roboform for Windows\sv(\d*?\.\d*?\.\d*)'
     $version = $Matches[1]
 
     @{
