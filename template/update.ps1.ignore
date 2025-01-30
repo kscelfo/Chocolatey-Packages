@@ -1,4 +1,4 @@
-import-module au
+import-module Chocolatey-AU
 
 $releases = ''
 
@@ -35,4 +35,4 @@ function global:au_GetLatest {
     }
 }
 
-update
+Update-Package -ChecksumFor all

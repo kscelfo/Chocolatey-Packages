@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>vsae2022</id>
+    <version>0.0.0</version>
+    <packageSourceUrl>https://github.com/kscelfo/Chocolatey-Packages/tree/master/vsae2022/</packageSourceUrl>
+    <owners>kscelfo</owners>
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>System Center Visual Studio Authoring Extensions (2022)</title>
+    <authors>Microsoft</authors>
+    <projectUrl>https://www.microsoft.com</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/kscelfo/Chocolatey-Packages/master/vsae2022/icon.png</iconUrl>
+    <licenseUrl>https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement?rtc=1</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>    
+    <docsUrl>http://bit.ly/VSAEWiki</docsUrl>
+    <tags>"System Center" Microsoft "Authoring Extensions" "Visual Studio"</tags>
+    <summary>System Center Visual Studio Authoring Extensions</summary>
+    <description>The System Center Visual Studio Authoring Extensions—VSAE—is an add-in for Visual Studio 2022 (all editions) which provides Lifecycle Management Tools to support Management Pack Authoring.</description>
+    <!-- =============================== -->      
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

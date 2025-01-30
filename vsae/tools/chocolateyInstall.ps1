@@ -11,7 +11,7 @@ $packageArgs = @{
   checksumType64 = 'sha256'
   silentArgs     = '/qn'
   validExitCodes = @(0)
-  softwareName   = 'System Center Visual Studio 2022 Authoring Extensions'
+  softwareName   = 'System Center Visual Studio 2019/2017/2015/2013/2012 Authoring Extensions'
 }
 
 # Check if the software is already installed
