@@ -25,27 +25,27 @@ environment:
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: uzzDSK6YD0lrB2b2AxRpiTmttCM+UujrL5WIjr8dE3w= #https://ci.appveyor.com/tools/encrypt
+    secure: ugXYloow3xSQS8cs9YoGZQ== #https://ci.appveyor.com/tools/encrypt
   mail_pass:
-    secure: oebnLUchFoXyWXpZ8L1RgtDfZY70llEj01Hhwv1Cq1I= #https://ci.appveyor.com/tools/encrypt
-  mail_server: smtp.gmail.com
-  mail_port: 587
+    secure: MuanYO5BDFItKwy8Aohbj4oq6aDvlemdM2pP3JWMzTfqOitwBlnrgOb+zFquOlD/dGH7sxfUpf+rJQITCEqmo6NicKtAkums7htSOJkLH0s= #https://ci.appveyor.com/tools/encrypt
+  mail_server: smtp.sendgrid.net
+  mail_port: 465
   mail_enablessl: true
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id:
+  gist_id: https://gist.github.com/kscelfo/37749c0e1dfa08e5427639b066d357cc
 
   # Force test: gist id for test results
-  gist_id_test:
+  gist_id_test: https://gist.github.com/kscelfo/758b0f1a5ee9f0cb53e356d0f536fb27
 
   # Chocolatey API key - to push updated packages
   api_key:
     secure: +aE4MYlp7vf6MbsqSkSjbtUEux3EIRGZ65XChaXrsWQwDj41RAvounzXzH5IVGzl # https://ci.appveyor.com/tools/encrypt
 
 init:
-- git config --global user.email "chocolatey@realdimensions.net"
-- git config --global user.name "Chocolatey"
+- git config --global user.email "kscelfo@gmail.com"
+- git config --global user.name "Kenny Scelfo"
 - git config --global core.safecrlf false
 
 install:
