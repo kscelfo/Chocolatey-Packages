@@ -21,11 +21,8 @@ install:
 - git --version
 - choco --version
 - ps: |
-
-    Write-Host "`$env:TEMP:`t` ${Env:TEMP}"
     git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
-    Get-ChildItem -Path "${env:TEMP}" -Recurse -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName | Sort-Object | ForEach-Object { Write-Host $_ }
 
 - ps: |
     "Build info"
