@@ -21,8 +21,14 @@ install:
 - git --version
 - choco --version
 - ps: |
+
+    Write-Host "`$env:TEMP: ${Env:TEMP}"
     git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
+
+    Get-ChildItem -Path ${env:TEMP} -Recurse -ErrorAction SilentlyContinue `
+      | ForEach-Object { Write-Host $_.FullName }
+
 
 - ps: |
     "Build info"
@@ -36,11 +42,6 @@ install:
 build_script:
 - ps: |
     $ErrorActionPreference = 'Continue'
-
-    Write-Host "`$env:TEMP: ${Env:TEMP}"
-
-    Get-ChildItem -Path ${env:TEMP} -Recurse -ErrorAction SilentlyContinue `
-    | ForEach-Object { Write-Host $_.FullName }`
 
     if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
 
