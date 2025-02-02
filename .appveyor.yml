@@ -22,13 +22,10 @@ install:
 - choco --version
 - ps: |
 
-    Write-Host "`$env:TEMP: ${Env:TEMP}"
+    Write-Host "`$env:TEMP:`t` ${Env:TEMP}"
     git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
-
-    Get-ChildItem -Path ${env:TEMP} -Recurse -ErrorAction SilentlyContinue `
-      | ForEach-Object { Write-Host $_.FullName }
-
+    Get-ChildItem -Path "${env:TEMP}" -Recurse -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName | Sort-Object | ForEach-Object { Write-Host $_ }
 
 - ps: |
     "Build info"
