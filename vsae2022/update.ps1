@@ -1,4 +1,4 @@
-import-module Chocolatey-AU
+import-module AU
 
 $details = 'https://www.microsoft.com/en-us/download/details.aspx?id=104504'
 

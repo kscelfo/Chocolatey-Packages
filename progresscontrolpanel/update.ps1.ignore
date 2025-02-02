@@ -1,4 +1,4 @@
-import-module Chocolatey-AU
+import-module AU
 
 $releases = 'https://www.telerik.com/try/control-panel'
 
