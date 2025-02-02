@@ -37,6 +37,11 @@ build_script:
 - ps: |
     $ErrorActionPreference = 'Continue'
 
+    Write-Host "`$env:TEMP: ${Env:TEMP}"
+
+    Get-ChildItem -Path ${env:TEMP} -Recurse -ErrorAction SilentlyContinue `
+    | ForEach-Object { Write-Host $_.FullName }`
+
     if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
 
     if ( ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and ($Env:APPVEYOR_FORCED_BUILD -ne 'true') ) {
