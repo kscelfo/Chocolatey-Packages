@@ -4,6 +4,7 @@ on:
 jobs:
   start_appveyor_build:
     name: Start AppVeyor Build
+    environment: Production
     runs-on: ubuntu-latest
     steps:
       - name: Invoke AppVeyor API
@@ -12,7 +13,7 @@ jobs:
            $apiUri = "${{ secrets.appveyor_api_uri }}/builds"
            $apiToken = "${{ secrets.appveyor_api_token }}"
            $headers = @{"Authorization" = "BEARER $apiToken"}
-           $body = @{ accountName = "kscelfo"; projectSlug = "chocolatey-packages"; branch = "master" }
+           $body = @{ accountName = "${{ secrets.appveyor_account_name }}"; projectSlug = "${{ secrets.appveyor_project_slug }}"; branch = "master" }
            $bodyJson = $body | ConvertTo-Json
            Invoke-RestMethod -Uri $apiUri -Method Post -Headers $headers -Body $bodyJson -ContentType "application/json"
       
