@@ -12,11 +12,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+    $url32Pattern = '(https?|ftp):\/\/www\.roboform\.com(:\d+)?(\/[\w\-._~:/?#[\]@!$&''()*+;%=]*)?\.msi'
+
     $download_page = Invoke-WebRequest -Uri $releases
 
-    $url32 = $download_page.links `
-    | Where-Object href -match '.msi$' `
-    | ForEach-Object href `
+    $url32 = [regex]::Matches($download_page.Content, $url32Pattern) `
+    | Select-Object -ExpandProperty Value `
+    | Sort-Object `
     | Select-Object -First 1
 
     $download_page.Content -match 'Roboform for Windows\sv(\d*?\.\d*?\.\d*)'
