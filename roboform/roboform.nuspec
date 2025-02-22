@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
-    <id>RoboForm</id>
-    <version>9.6.3</version>
+    <id>roboform</id>
+    <version>9.6.3.20250222</version>
     <packageSourceUrl>https://github.com/kscelfo/Chocolatey-Packages/tree/master/roboform/</packageSourceUrl>
     <owners>kscelfo</owners>
     <!-- == SOFTWARE SPECIFIC SECTION == -->
