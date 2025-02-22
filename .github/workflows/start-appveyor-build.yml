@@ -4,7 +4,6 @@ on:
 jobs:
   start_appveyor_build:
     name: Start AppVeyor Build
-    environment: Production
     runs-on: ubuntu-latest
     steps:
       - name: Invoke AppVeyor API
