@@ -10,10 +10,10 @@ jobs:
       - name: Invoke AppVeyor API
         shell: pwsh
         run: |
-           $apiUri = "${{ secrets.appveyor_api_uri }}/builds"
-           $apiToken = "${{ secrets.appveyor_api_token }}"
+           $apiUri = "${{ secrets.APPVEYOR_API_URI }}/builds"
+           $apiToken = "${{ secrets.APPVEYOR_API_TOKEN }}"
            $headers = @{"Authorization" = "BEARER $apiToken"}
-           $body = @{ accountName = "${{ secrets.appveyor_account_name }}"; projectSlug = "${{ secrets.appveyor_project_slug }}"; branch = "master" }
+           $body = @{ accountName = "${{ secrets.APPVEYOR_ACCOUNT_NAME }}"; projectSlug = "${{ secrets.APPVEYOR_PROJECT_SLUG }}"; branch = "master" }
            $bodyJson = $body | ConvertTo-Json
            Invoke-RestMethod -Uri $apiUri -Method Post -Headers $headers -Body $bodyJson -ContentType "application/json"
       
