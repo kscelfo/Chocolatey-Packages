@@ -1,0 +1,19 @@
+on:
+  schedule:
+  - cron: "0 5 * * *"
+jobs:
+  start_appveyor_build:
+    name: Start AppVeyor Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke AppVeyor API
+        shell: pwsh
+        run: |
+           $apiUri = "${{ secrets.appveyor_api_uri }}/builds"
+           $apiToken = "${{ secrets.appveyor_api_token }}"
+           $headers = @{"Authorization" = "BEARER $apiToken"}
+           $body = @{ accountName = "kscelfo"; projectSlug = "chocolatey-packages"; branch = "master" }
+           $bodyJson = $body | ConvertTo-Json
+           Invoke-RestMethod -Uri $apiUri -Method Post -Headers $headers -Body $bodyJson -ContentType "application/json"
+      
+  
